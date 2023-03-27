@@ -10,8 +10,8 @@ function Tiles() {
   const [items, setItem] = useState([
       {id: 1, img: 'imgs/bark.avif', stat: "", turn: 0},
       {id: 1, img: '../img/bark.avif', stat: "", turn: 0},
-      {id: 2, img: 'img/rock.avif', stat: "", turn: 0},
-      {id: 2, img: 'img/rock.avif', stat: "", turn: 0},
+      {id: 2, 'img': 'img/rock.avif', stat: "", turn: 0},
+      {id: 2, 'img': '/img/rock.avif', stat: "", turn: 0},
       {id: 3, img: 'img/dirt.jpg', stat: "", turn: 0},
       {id: 3, img: 'img/dirt.jpg', stat: "", turn: 0},
       {id: 4, img: 'img/grass.jpeg', stat: "", turn: 0},
