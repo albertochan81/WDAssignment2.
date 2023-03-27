@@ -9,18 +9,18 @@ function Tiles() {
   const [turnsCount,setTurnCount] =useState(0);
 
   const [items, setItem] = useState([
-      {id: 1, img: '/img/bark.avif', stat: "", turn: 0},
-      {id: 1, img: '/img/bark.avif', stat: "", turn: 0},
-      {id: 2, img: '/img/rock.avif', stat: "", turn: 0},
-      {id: 2, img: '/img/rock.avif', stat: "", turn: 0},
-      {id: 3, img: '/img/dirt.jpg', stat: "", turn: 0},
-      {id: 3, img: '/img/dirt.jpg', stat: "", turn: 0},
-      {id: 4, img: '/img/grass.jpeg', stat: "", turn: 0},
-      {id: 4, img: '/img/grass.jpeg', stat: "", turn: 0},
-      {id: 5, img: '/img/sand.jpeg', stat: "", turn: 0},
-      {id: 5, img: '/img/sand.jpeg', stat: "", turn: 0},
-      {id: 6, img: '/img/water.jpg', stat: "", turn: 0},
-      {id: 6, img: '/img/water.jpg', stat: "", turn: 0},
+      {id: 1, img: 'img/bark.avif', stat: "", turn: 0},
+      {id: 1, img: 'img/bark.avif', stat: "", turn: 0},
+      {id: 2, img: 'img/rock.avif', stat: "", turn: 0},
+      {id: 2, img: 'img/rock.avif', stat: "", turn: 0},
+      {id: 3, img: 'img/dirt.jpg', stat: "", turn: 0},
+      {id: 3, img: 'img/dirt.jpg', stat: "", turn: 0},
+      {id: 4, img: 'img/grass.jpeg', stat: "", turn: 0},
+      {id: 4, img: 'img/grass.jpeg', stat: "", turn: 0},
+      {id: 5, img: 'img/sand.jpeg', stat: "", turn: 0},
+      {id: 5, img: 'img/sand.jpeg', stat: "", turn: 0},
+      {id: 6, img: 'img/water.jpg', stat: "", turn: 0},
+      {id: 6, img: 'img/water.jpg', stat: "", turn: 0},
   ].sort(() =>Math.random()- 0.5))
 
   function newGame(){
