@@ -1,5 +1,4 @@
 import { useState } from 'react';
-//import Tiles from './components/Tiles'
 import Tile from './Tile'
 
 
@@ -9,7 +8,7 @@ function Tiles() {
   const [turnsCount,setTurnCount] =useState(0);
 
   const [items, setItem] = useState([
-      {id: 1, img: 'img/bark.avif', stat: "", turn: 0},
+      {id: 1, img: 'imgs/bark.avif', stat: "", turn: 0},
       {id: 1, img: 'img/bark.avif', stat: "", turn: 0},
       {id: 2, img: 'img/rock.avif', stat: "", turn: 0},
       {id: 2, img: 'img/rock.avif', stat: "", turn: 0},
@@ -41,11 +40,11 @@ function Tiles() {
    let counter = 0;
    for (let i=0; i < items.length; i++)
    {
-    if (items[i].stat == " matched ") {
+    if (items[i].stat === " matched ") {
       counter++;
      
    }
-    if (counter == 12) {
+    if (counter === 12) {
     setTimeout(()=> {
       alert("You Won!")}, 500)
     }
@@ -82,13 +81,13 @@ function Tiles() {
   }
 
   function whenClicked(id) {
-    if(turnCheck === 1 && items[id].stat != " active " && items[id].stat != " matched "){
+    if(turnCheck === 1 && items[id].stat !== " active " && items[id].stat != " matched "){
       check(id)
       setTurn(2)
       setTurnCount(turnsCount +1)
 
     }
-      else if( prev === -1 && turnCheck === 0 && items[id].stat != " matched "){
+      else if( prev === -1 && turnCheck === 0 && items[id].stat !== " matched "){
           items[id].stat = " active "
           items[id].turn = 1
           setItem([...items])

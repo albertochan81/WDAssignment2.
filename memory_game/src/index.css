@@ -89,7 +89,6 @@ button
 
 .tile.active
 {
-  /*animation: 2s hiteTile linear;*/
   transform: rotateY(0);
 }
 
@@ -100,7 +99,7 @@ button
 
 .tile.unmatched
 {
-  /*animation: 1s hideImage linear;*/
+  
   background-color: red;
 }
 
